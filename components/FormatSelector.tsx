@@ -12,7 +12,6 @@ export default function FormatSelector({ selectedFormat, onFormatChange }: Forma
   const formats: Array<{ value: ConversionFormat; label: string; icon: string }> = [
     { value: 'pdf', label: 'PDF', icon: '📄' },
     { value: 'docx', label: 'Word', icon: '📝' },
-    { value: 'pptx', label: 'PowerPoint', icon: '📊' },
   ];
 
   return (

@@ -1,0 +1,24 @@
+
+> markdown-converter@0.1.0 build
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   ▲ Next.js 16.0.0 (Turbopack)
+
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ✓ Compiled successfully in 7.5s
+   Running TypeScript ...
+Failed to compile.
+
+./lib/converters/toDocx.ts:87:10
+Type error: 'token.tokens' is possibly 'undefined'.
+
+[0m [90m 85 |[39m       })[33m;[39m
+ [90m 86 |[39m     } [36melse[39m [36mif[39m (token[33m.[39mtype [33m===[39m [32m'blockquote'[39m) {
+[31m[1m>[22m[39m[90m 87 |[39m          token[33m.[39mtokens[33m.[39mforEach((childToken[33m:[39m any) [33m=>[39m {
+ [90m    |[39m          [31m[1m^[22m[39m
+ [90m 88 |[39m             [36mif[39m (childToken[33m.[39mtype [33m===[39m [32m'paragraph'[39m) {
+ [90m 89 |[39m                  docChildren[33m.[39mpush(
+ [90m 90 |[39m                     [36mnew[39m [33mParagraph[39m({[0m
+Next.js build worker exited with code: 1 and signal: null
